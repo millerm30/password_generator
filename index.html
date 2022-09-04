@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name=""author" content="Michael Miller">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./styles/styles.css" rel="stylesheet">
+  <title>Random Password Generator</title>
+</head>
+<body class="bg-[#f8f8f8] flex justify-center items-center min-h-[100vh]">
+  <div class="w-11/12 bg-white p-4 shadow-xl text-center md:w-1/2 lg:w-1/3">
+    <h1 class="text-center text-2xl text-zinc-700 font-serif mb-6 md:text-4xl lg:text-4xl">Random Password Generator</h1>
+    <input type="text" name="password" placeholder="Create password" id="password" class="p-6 select-none h-5 w-full rounded-lg border-2 border-gray-700 outline-none text-2xl mb-6" readonly>
+    <div class="flex justify-evenly">
+      <button id="button" class="w-1/3 text-lg mt-4 md:w-1/3 lg:w/1/3 h-12 text-center bg-[#3e7eff] rounded cursor-pointer text-white" onclick="genPassword()">Generate</button>
+      <button id="button" class="w-1/3 text-lg mt-4 md:w-1/3 lg:w-1/3 h-12 text-center bg-[#3e7eff] rounded cursor-pointer text-white" onclick="copyPassword()">Copy</button>
+    </div>
+  </div>
+  <script src="./javascript/passGenerator.js""></script>
+</body>
+</html>
